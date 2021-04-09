@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="./images/pin.png" type="image/x-icon">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+		integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+		crossorigin="" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+	<title>TU SALSA CASINO</title>
+</head>
+
+<body class="is-preload">
+
+	<!-- Header -->
+	<section id="header">
+		<div class="inner">
+			<span class="icon solid major fa-map-marker-alt"></span>
+			<h1>Bienvenido a <strong>TU SALSA CASINO</strong>, una forma<br />
+				diferente de ubicar <a href="#academy-list">TU ACADEMIA IDEAL</a>.</h1>
+			<p class="inner-text"><b>No esperes mas, embarcate a ubicar a los profesionales<br />
+					de la salsa casino en Caracas.</b></p>
+					<a href="#two" class="button scrolly">Entrar como Academia</a>
+			<ul class="actions special">
+				<li><a href="#two" class="button scrolly">Vamos al Mapa</a></li>
+
+			</ul>
+		</div>
+	</section>
+
+	<!-- join -->
+	<section id="one" class="main style1">
+		<div class="container">
+			<div class="row gtr-150">
+				<div class="col-6 col-12-medium">
+					<header class="major">
+						<h2>Tienes una academia y no te encuentras en nuestra plataforma?</h2>
+					</header>
+					<p>Crea una cuenta y forma parte de nuestro directorio. <br />
+						Posicionate como la mejor opcion para aprender a bailar en Caracas.</p>
+					<a href="/signup">Registrate aqui >></a>
+				</div>
+				<div class="col-6 col-12-medium imp-medium">
+					<span class="image fit"><img src="images/pic01.jpg" alt="" /></span>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- map -->
+	<section id="two" class="main style2">
+		<div class="container map">
+			<h2><b>Localiza tu academia favorita</b></h2>
+			<div class=" ">
+				<div id="mapid"></div>
+			</div>
+		</div>
+	</section>
+
+	<!-- academy -->
+	<section id="three" class="main style1 special">
+		<div class="container">
+			<header class="major academy" id="academy">
+				<h2><b>LISTADO DE ACADEMIAS</b></h2>
+			</header>
+			<h3><b>LAS MAS POPULARES.</b></h3>
+			<div class="row gtr-150">
+				<div class="col-4 col-12-medium">
+					<span class="image fit"><img src="images/academy1.jpg" alt="" /></span>
+					<h3>ACADEMIA "A"</h3>
+					<p>Ubicada en algun lugar del planeta tierra. y sus confines</p>
+					<ul class="icons">
+						<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a>
+						</li>
+						<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a>
+						</li>
+						<li><a href="#" class="icon brands alt fa-whatsapp"><span class="label">Email</span></a></li>
+					</ul>
+				</div>
+				<div class="col-4 col-12-medium">
+					<span class="image fit"><img src="images/academy2.jpg" alt="" /></span>
+					<h3>ACADEMIA "B"</h3>
+					<p>Ubicada en algun lugar del planeta tierra. y sus confines</p>
+					<ul class="icons">
+						<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a>
+						</li>
+						<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a>
+						</li>
+						<li><a href="#" class="icon brands alt fa-whatsapp"><span class="label">Email</span></a></li>
+					</ul>
+				</div>
+				<div class="col-4 col-12-medium">
+					<span class="image fit"><img src="images/academy3.jpg" alt="" /></span>
+					<h3>ACADEMIA "C"</h3>
+					<p>Ubicada en algun lugar del planeta tierra. y sus confines</p>
+					<ul class="icons">
+						<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a>
+						</li>
+						<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a>
+						</li>
+						<li><a href="#" class="icon brands alt fa-whatsapp"><span class="label">Email</span></a></li>
+					</ul>
+				</div>
+			</div>
+			<ul class="actions special">
+				<li id="academy-scroll" onclick="showAcademy()"><a href="#three" class="button scrolly">Ver mas
+						academias</a></li>
+			</ul>
+			<div class="">
+				<table id="table" class="table">
+					<tbody>
+						<tr>
+							<td>
+								<h3>ACADEMIA "D"</h3>
+							</td>
+							<td>
+								<p>Ubicada en algun lugar del planeta tierra. y sus confines</p>
+							</td>
+							<td>
+								<ul class="icons">
+									<li><a href="#" class="icon brands alt fa-twitter"><span
+												class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon brands alt fa-facebook-f"><span
+												class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon brands alt fa-instagram"><span
+												class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon brands alt fa-whatsapp"><span
+												class="label">Email</span></a></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<h3>ACADEMIA "E"</h3>
+							</td>
+							<td>
+								<p>Ubicada en algun lugar del planeta tierra. y sus confines</p>
+							</td>
+							<td>
+								<ul class="icons">
+									<li><a href="#" class="icon brands alt fa-twitter"><span
+												class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon brands alt fa-facebook-f"><span
+												class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon brands alt fa-instagram"><span
+												class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon brands alt fa-whatsapp"><span
+												class="label">Email</span></a></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<h3>ACADEMIA "F"</h3>
+							</td>
+							<td>
+								<p>Ubicada en algun lugar del planeta tierra. y sus confines</p>
+							</td>
+							<td>
+								<ul class="icons">
+									<li><a href="#" class="icon brands alt fa-twitter"><span
+												class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon brands alt fa-facebook-f"><span
+												class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon brands alt fa-instagram"><span
+												class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon brands alt fa-whatsapp"><span
+												class="label">Email</span></a></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<h3>ACADEMIA "G"</h3>
+							</td>
+							<td>
+								<p>Ubicada en algun lugar del planeta tierra. y sus confines</p>
+							</td>
+							<td>
+								<ul class="icons">
+									<li><a href="#" class="icon brands alt fa-twitter"><span
+												class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon brands alt fa-facebook-f"><span
+												class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon brands alt fa-instagram"><span
+												class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon brands alt fa-whatsapp"><span
+												class="label">Email</span></a></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<h3>ACADEMIA "H"</h3>
+							</td>
+							<td>
+								<p>Ubicada en algun lugar del planeta tierra. y sus confines</p>
+							</td>
+							<td>
+								<ul class="icons">
+									<li><a href="#" class="icon brands alt fa-twitter"><span
+												class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon brands alt fa-facebook-f"><span
+												class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon brands alt fa-instagram"><span
+												class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon brands alt fa-whatsapp"><span
+												class="label">Email</span></a></li>
+								</ul>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</section>
+
+	<!-- contact -->
+	<section id="contact" class="main style2 special">
+		<div class="container">
+			<header class="major">
+				<h2>Quieres saber mas acerca de este proyecto?</h2>
+			</header>
+			<p>CSontactanos y atenderemos tus dudas.</p>
+			<ul class="actions special">
+				<li><a href="#" class="button wide">Comunicate con nosotros</a></li>
+			</ul>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<section id="footer">
+		<ul class="icons">
+			<li><a href="https://twitter.com/EliecerLR" class="icon brands alt fa-twitter" target="_blank"><span
+						class="label">Twitter</span></a></li>
+			<li><a href="https://www.facebook.com/eliecer.lemusrodriguez" target="_blank"
+					class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+			<li><a href="https://www.instagram.com/enriqueelr/" target="_blank"
+					class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+			<li><a href="https://github.com/IGnitty/tu-salsa-casino" target="_blank"
+					class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+			<li><a href="mailto:lemuselr@gmail.com?Subject=Contacto%20TU%20SALSA%20CASINO" target="_blank"
+					class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+		</ul>
+		<ul class="copyright">
+			<li>&copy; TU SALSA CASINO</li>
+			<li><a href="https://github.com/IGnitty/">ELIECER LEMUS</a></li>
+		</ul>
+	</section>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+		integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+		crossorigin=""></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
