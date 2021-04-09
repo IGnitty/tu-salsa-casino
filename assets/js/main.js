@@ -9,17 +9,7 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
     accessToken: 'sk.eyJ1IjoiaWduaXR0eSIsImEiOiJja245azA4bTcweTU2MnJsbnUybnBtNTF5In0.5pi8cMd7vLMPpDR-Ms3Pjw'
 }).addTo(myMap);
 
-
-	var myIcon = L.icon({
-		iconUrl:'../images/pin.png',
-		iconSize: [50, 50],
-		iconAnchor: [50, 50],
-		popupAnchor: [-25, -50],
-		shadowSize: [68, 95],
-		shadowAnchor: [22, 94]
-	});
-
-	var showIcon = L.marker([10.498659, -66.902648], {icon: myIcon}).addTo(myMap);
+	var showIcon = L.marker([10.498659, -66.902648]).addTo(myMap);
 	showIcon.bindPopup('<a href="#academy" id="popup">Academia Ritmo Caribeño</a>').openPopup();
 
 function showAcademy() {
